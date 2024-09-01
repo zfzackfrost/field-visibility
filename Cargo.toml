@@ -1,0 +1,21 @@
+[package]
+name = "field-visibility"
+description = "Attribute to specify the visibility of all fields in a Rust struct"
+keywords = ["attribute", "field", "visibility", "macro", "struct"]
+homepage = "https://github.com/zfzackfrost/field-visibility"
+repository = "https://github.com/zfzackfrost/field-visibility"
+readme = "README.md"
+categories = ["rust-patterns"]
+license = "MIT"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "field_visibility"
+path = "src/lib.rs"
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0.86"
+quote = "1.0.37"
+syn = { version = "2.0.76", features = ["full"] }
