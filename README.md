@@ -46,8 +46,7 @@ struct SomeStruct {
 
     pub(crate) crate_field: i32,
 
-    #[visibility] // No argument means private
-    private_field: i32,
+    pub(self) private_field: i32, // Equivalent to private
 }
 ```
 
@@ -60,6 +59,6 @@ struct SomeStruct {
 
     pub(crate) crate_field: i32,
 
-    private_field: i32,
+    pub(self) private_field: i32,
 }
 ```
